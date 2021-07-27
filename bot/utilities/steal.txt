@@ -16,7 +16,7 @@ $ignoreLinks
 $botTyping
 
 $c[
- Description - Steals emoji from other server
- Usage - steal :emoji: , steal :emoji: (name)
- Requires unstable? - Yes
+ Description: Steals emoji from other server
+ Usage: steal :emoji: , steal :emoji: (name)
+ Unstable required? Yes
 ]
