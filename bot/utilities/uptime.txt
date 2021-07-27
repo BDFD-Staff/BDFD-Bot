@@ -1,0 +1,10 @@
+$nomention
+My current Uptime is $uptime
+
+$c[
+Description: Returns the current Bot Uptime
+
+Usage: <prefix>uptime
+
+Unstable Required? No
+]
