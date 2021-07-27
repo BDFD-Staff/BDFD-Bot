@@ -1,3 +1,4 @@
+$nomention
 $if[$isNumber[$message[1]]==false]
 🎲 You rolled `$random[1;7]` 
 $endif
@@ -9,5 +10,5 @@ $endif
 $c[
 Description: Returns a random number (1-6) or 1-the provided max number.
 Usage: !roll or !roll (maxNumber)
-Requires Unstable? No
+Requires Unstable? Yes
 ]
