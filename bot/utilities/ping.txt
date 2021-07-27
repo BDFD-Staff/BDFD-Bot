@@ -1,5 +1,5 @@
 $nomention
-Pong! `$ping ms`
+🏓 Pong! `$ping ms`
 
 $c[
 --- Code Info ---
