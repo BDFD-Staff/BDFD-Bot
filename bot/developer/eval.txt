@@ -2,7 +2,6 @@ $nomention
 $onlyForIDs[$getVar[botOwnerID];❌ Only my developer can use that!]
 $eval[$message]
 
-
 $c[
 Description: Runs the provided code. This command should be used wisely!
 Usage: !eval (code)
