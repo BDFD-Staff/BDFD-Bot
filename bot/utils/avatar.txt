@@ -1,0 +1,11 @@
+$nomention
+$title[$username[$findUser[$message]]#$discriminator[$findUser[$message]]'s Avatar]
+$image[$userAvatar[$findUser[$message]]?size=4096]
+$addButton[no;$userAvatar[$findUser[$message]]?size=2048;Download;link;no;]
+$color[$getVar[color]]
+
+$c[
+Description: Returns the user's avatar.
+Usage: !avatar or !avatar @user
+Requires Unstable? No
+]
