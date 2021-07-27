@@ -6,6 +6,6 @@ $color[$getVar[color]]
 
 $c[
 Description: Returns the user's avatar.
-Usage: !avatar or !avatar @user
+Usage: !avatar or !avatar (user)
 Requires Unstable? No
 ]
