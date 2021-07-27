@@ -5,6 +5,7 @@ $addButton[no;$userAvatar[$findUser[$message]]?size=2048;Download;link;no;]
 $color[$getVar[color]]
 
 $c[
+--- Code Info ---
 Description: Returns the user's avatar.
 Usage: !avatar or !avatar (user)
 Requires Unstable? No
