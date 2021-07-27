@@ -1,0 +1,11 @@
+$nomention
+$title[Balance]
+$addField[Total;$numberSeparator[$sum[$getVar[Money;$findUser[$message]];$getVar[Bank;$findUser[$message]]]]]
+$addField[Bank;$numberSeparator[$getVar[Bank;$findUser[$message]]]]
+$addField[Wallet;$numberSeparator[$getVar[Money;$findUser[$message]]]]
+$color[$getVar[color]]
+
+---- Code Info ---
+Description: Return's user's balance.
+Usage: !balance or !balance @user
+Unstable Required? Yes
