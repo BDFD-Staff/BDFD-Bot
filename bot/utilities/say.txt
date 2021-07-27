@@ -1,5 +1,5 @@
 $nomention
-$argsCheck[>1;❌ Please provide a 'text'. Usage: `!say (text)`]
+$argsCheck[>1;❌ Please provide a 'text'. Usage: `!say (text)` or `!say (text) --dm`]
 
 $if[$checkContains[$toLowercase[$noMentionMessage[>]];—dm;-dm;——dm;--dm]==false]
 $deletecommand
