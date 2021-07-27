@@ -1,13 +1,22 @@
 $nomention
 $argsCheck[>1;❌ Please provide a 'text'. Usage: `!say (text)`]
-$onlyBotPerms[managemessages;❌ I need the 'manage messages' permission to run that command successfully!]
-$onlyPerms[managemessages;❌ You need the 'manage messages' permission to use that command!]
+
+$if[$checkContains[$toLowercase[$noMentionMessage[>]];—dm;-dm;——dm;--dm]==false]
 $deletecommand
 $noMentionMessage
+$onlyBotPerms[managemessages;❌ I need the 'manage messages' permission to run that command successfully!]
+$onlyPerms[managemessages;❌ You need the 'manage messages' permission to use that command!]
+$endif
+
+$if[$checkContains[$toLowercase[$noMentionMessage[>]];—dm;-dm;——dm;--dm]==true]
+$deletecommand
+$replaceText[$noMentionMessage;$noMentionMessage[>];;1]
+$dm
+$endif
 
 $c[
 Description: A simple say command.
-Usage: !say (text)
+Usage: !say (text) or !say (text) --dm
 User Required Permissions: Manage_Messages
 Bot Required Permissions: Manage_Messages
 Unstable Required? No
