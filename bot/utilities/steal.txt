@@ -1,0 +1,22 @@
+$nomention
+$suppressErrors[**This emoji doesn't exist.
+Usage: `-steal ID name png/gif`**]
+$onlyAdmin[**Sorry but this command is only for admins.**]
+$onlyIf[$replaceText[$replaceText[$replaceText[$isNumber[$message[1]];true;$toLowercase[$message[3]];1];false;$replaceText[$replaceText[$checkCondition[$replaceText[$splitText[1];<;;1]==a];true;gif;1];false;png;1];1];gif;png;1]==png;**Write a valid format. If the emoji is animated write `gif` after the name else write `png`.
+Usage: `-steal ID name png/gif`**]
+$onlyIf[$replaceText[$replaceText[$isNumber[$message[1]];true;$message[2];1];false;$replaceText[$replaceText[$checkCondition[$message[2]==];false;$message[2];1];true;$splitText[2];1];1]!=;**Put a name!
+$replaceText[$replaceText[$isNumber[$message[1]];true;Usage: `-steal ID name png/gif`;1];false;Usage: `-steal :emoji: (name)`;1]**]
+$onlyIf[$charCount[$replaceText[$replaceText[$isNumber[$message[1]];true;$message[1];1];false;$replaceText[$splitText[3];>;;1];1]]==18;**Put a valid $replaceText[$replaceText[$isNumber[$message[1]];true;ID;1];false;emoji;1]!
+$replaceText[$replaceText[$isNumber[$message[1]];true;Usage: `-steal ID name png/gif`;1];false;Usage: `-steal :emoji: (name)`;1]**]
+$onlyIf[$isNumber[$replaceText[$replaceText[$isNumber[$message[1]];true;$message[1];1];false;$replaceText[$splitText[3];>;;1];1]]==true;**Put a valid emoji!
+Usage: `steal :emoji: (name)`**]
+$addEmoji[$replaceText[$replaceText[$isNumber[$message[1]];true;$message[2];1];false;$replaceText[$replaceText[$checkCondition[$message[2]==];false;$message[2];1];true;$splitText[2];1];1];https://cdn.discordapp.com/emojis/$replaceText[$replaceText[$isNumber[$message[1]];true;$message[1];1];false;$replaceText[$splitText[3];>;;1];1].$replaceText[$replaceText[$isNumber[$message[1]];true;$toLowercase[$message[3]];1];false;$replaceText[$replaceText[$checkCondition[$replaceText[$splitText[1];<;;1]==a];true;gif;1];false;png;1];1];yes] Good! I added this emoji to the server with name `$replaceText[$replaceText[$isNumber[$message[1]];true;$message[2];1];false;$replaceText[$replaceText[$checkCondition[$message[2]==];false;$message[2];1];true;$splitText[2];1];1]`
+$textSplit[$message[1];$replaceText[$replaceText[$isNumber[$message[1]];true; ;1];false;:;1]]
+$ignoreLinks
+$botTyping
+
+$c[
+ Description - Steals emoji from other server
+ Usage - steal :emoji: , steal :emoji: (name)
+ Requires unstable? - Yes
+]
