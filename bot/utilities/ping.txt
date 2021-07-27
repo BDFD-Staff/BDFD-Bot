@@ -1,8 +1,9 @@
 $nomention
-My current latency is $pingms
+Pong! `$ping ms`
 
 $c[
-Description: Prints out the current Bot Latency
-Usage: <prefix>ping
+--- Code Info ---
+Description: Returns the bot's ping.
+Usage: !ping
 Unstable Required? No
 ]
