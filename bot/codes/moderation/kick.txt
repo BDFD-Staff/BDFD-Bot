@@ -26,6 +26,6 @@ $addTimestamp
 $endif
 $endif
 
-```
-Kick command which doesn't need unstable
-```
+$c[Kick command which doesn't need unstable
+
+If there's an error occuring use unstable]
