@@ -4,4 +4,5 @@ My current latency is $pingms
 $c[
 Description: Prints out the current Bot Latency
 Usage: <prefix>ping
+Unstable Required? No
 ]
