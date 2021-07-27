@@ -17,6 +17,8 @@ $botTyping
 
 $c[
  Description: Steals emoji from other server
- Usage: steal :emoji: , steal :emoji: (name)
+
+ Usage: <prefix>steal :emoji: , <prefix>steal :emoji: (name)
+
  Unstable required? Yes
 ]
