@@ -28,7 +28,12 @@ $username[$replaceText[$replaceText[$isNumber[$message[1]];true;$message[1];1];f
 ID: $replaceText[$replaceText[$isNumber[$message[1]];true;$message[1];1];false;$mentioned[1];1]
 ]
 
-$c[Maybe unstable or BDScript2 needed!!!
+$c[
+Description: Warns the provided user
+
+Usage: <prefix>warn {@user/id} {reason}
+
+Maybe unstable or BDScript2 needed!!!
 
 Needed Variables:
 Variable Name:
