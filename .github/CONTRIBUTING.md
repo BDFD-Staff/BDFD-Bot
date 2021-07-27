@@ -21,3 +21,9 @@ Unstable Required? Yes/No OR BDScript 2 Required? Yes/No
 - You most likely won't receive credit/benefits for your contributions. We do not provide any benefits for users who contribute. However, we appreciate them.
 - Please make sure the code is secure, working, readable, organized, and provide a accurate description/usage/etc.
 - Be nice and friendly to user's making/commenting/replying-on issues/pull requests.
+
+## Errors
+*Examples:*
+- User Permission Errors: ❌ You need the 'permission' permission to use that command!
+- Bot Permission Errors: ❌ I need the 'permission' permission to run that command successfully!
+- Argument Errors: ❌ Please provide a 'arg'. Usage: \`!example (arg)\`
