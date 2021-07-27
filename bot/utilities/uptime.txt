@@ -1,10 +1,11 @@
 $nomention
-My current Uptime is $uptime
+$title[Uptime]
+$description[I've been online for `$uptime`!]
+$color[$getVar[color]]
 
 $c[
-Description: Returns the current Bot Uptime
-
-Usage: <prefix>uptime
-
+--- Code Info ---
+Description: Returns the bot's uptime.
+Usage: !uptime
 Unstable Required? No
 ]
