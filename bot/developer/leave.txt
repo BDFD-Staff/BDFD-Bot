@@ -1,0 +1,11 @@
+$nomention
+$onlyForIDs[$getVar[botOwnerID];❌ Only my developer can use that command!]
+$onlyIf[$guildExists[$message]==true;❌ The 'serverID' provided doesn't exist. Usage: `!leave (serverID)`]
+✅ Successfully left server: `$serverName[$message]`
+$botLeave[$message]
+
+$c[
+Description: Leaves the provided server.
+Usage: !leave (serverID)
+User Required Permissions: Bot_Owner
+]
