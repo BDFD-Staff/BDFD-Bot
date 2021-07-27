@@ -1,0 +1,31 @@
+$nomention
+$argsCheck[>2;❌ Wrong Usage: **<prefix>kick <@user/id> <reason>**]
+$onlyPerms[kick;❌ Needed Permission: `KICK_MEMBERS`]
+$onlyBotPerms[kick;❌ Needed Bot Permission: `KICK_MEMBERS`]
+$if[$isNumber[$message[1]]==true]
+$kick[$message[1];$replaceText[$message;$message[1];;1]]
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$title[✅ Kick successfully executed]
+$addField[User;$username[$message[1]]#$discriminator[$message[1]] got kicked;yes]
+$addField[Responsible Moderator;$username#$discriminator[];yes]
+$addField[Reason;$replaceText[$message;$message[1];;1];yes]
+$footer[User-ID: $authorID]
+$addTimestamp
+$else
+$if[$isNumber[$message[1]]==false]
+$kick[$mentioned[1;no];$noMentionMessage]
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$title[✅ Kick successfully executed]
+$addField[User;$username[$mentioned[1;no]]#$discriminator[$mentioned[1;no]] got kicked;yes]
+$addField[Responsible Moderator;$username#$discriminator[];yes]
+$addField[Reason;$noMentionMessage;yes]
+$footer[User-ID: $authorID]
+$addTimestamp
+$endif
+$endif
+
+```
+Kick command which doesn't need unstable
+```
