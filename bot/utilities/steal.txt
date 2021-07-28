@@ -1,6 +1,6 @@
 $nomention
 $suppressErrors[**This emoji doesn't exist.
-Usage: `-steal ID name png/gif`**]
+Usage: `steal ID name png/gif`**]
 $onlyAdmin[**Sorry but this command is only for admins.**]
 $onlyIf[$replaceText[$replaceText[$replaceText[$isNumber[$message[1]];true;$toLowercase[$message[3]];1];false;$replaceText[$replaceText[$checkCondition[$replaceText[$splitText[1];<;;1]==a];true;gif;1];false;png;1];1];gif;png;1]==png;**Write a valid format. If the emoji is animated write `gif` after the name else write `png`.
 Usage: `-steal ID name png/gif`**]
