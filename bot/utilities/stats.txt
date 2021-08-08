@@ -1,0 +1,13 @@
+$nomention
+$title[Bot Statics]
+$description[Total Users: $allMembersCount
+Total Servers: $serverCount
+Total Commands: $commandsCount]
+$color[$getVar[color]]
+
+$c[
+--- Code Info ---
+Description: Returns stats about the bot.
+Usage: !stats
+Unstable Required? No
+]
