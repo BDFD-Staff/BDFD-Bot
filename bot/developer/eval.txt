@@ -1,10 +1,26 @@
 $nomention
 $onlyForIDs[$getVar[botOwnerID];❌ Only my developer can use that!]
-$eval[$message]
+$title[Eval-Command]
+$description[
+**Input:**
+```cos
+$message
+```
 
+**Output:**
+```cos
+$eval[$message]
+```
+]
 $c[
 Description: Runs the provided code. This command should be used wisely!
 Usage: !eval (code)
 User Required Permissions: Bot_Owner
 Require BDScript 2? Yes
+
+Also make sure to add your ID in the botOwnerID variable!
+*How to obtain a User-ID?*  
+Mobile: https://cdn.discordapp.com/attachments/764792308473659422/764812408521883658/ezgif-7-87ec577dc6ba.gif
+
+PC: User Settings > Advanced > Developer-Mode
 ]
