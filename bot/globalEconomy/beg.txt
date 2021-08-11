@@ -1,0 +1,25 @@
+$nomention
+$globalCooldown[1m;❌ Please wait %time% then use that command again!]
+$if[$random[1;5]!=2]
+$description[You begged $randomMention and gained `$random[50;250]` coins!]
+$setVar[Money;$sum[$getVar[Money;$authorID];$random[50;250]];$authorID]
+$color[$getVar[color]]
+$endif
+
+$if[$random[1;5]==2]
+You attempted begging but didn't get anything!
+$color[#ED4245]
+$endif
+
+$title[Begging]
+$footer[$randomText[Imagine Begging;Oh, You Poor Little Beggar;Ew Begging]]
+$addTimestamp
+$reply
+
+
+$c[
+--- Code Info ---
+Usage: !beg
+Description: A beg command for global economy.
+Require Unstable?: No
+]
