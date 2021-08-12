@@ -1,0 +1,10 @@
+$nomention
+$onlyForIDs[$getVar[botOwnerID];❌ Only my developer can use that!]
+$serverNames
+
+$c[
+--- Code Info ---
+Description: Returns the names of up to 10 servers which the bot is in.
+Usage: !server-names
+Requires Unstable?: No
+]
