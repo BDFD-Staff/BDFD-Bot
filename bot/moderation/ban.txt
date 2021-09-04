@@ -2,14 +2,14 @@ $nomention
 $onlyPerms[ban;❌ You need the 'ban' permission to use that command!]
 $argsCheck[>1;❌ Please provide a 'user'. Usage: `!ban (user) <reason>`]
 $onlyBotPerms[ban;❌ I need the 'ban' permission to run that command!]
+$onlyIf[$userExists[$message[1]]==true;❌ Failed to find user! Usage: `!ban (user) <reason>`]
+$onlyIf[$findUser[$message[1];no]!=;❌ Failed to find user! Usage: `!ban (user) <reason>`]
 $if[$isNumber[$message[1]]==false]
 $banID[$replaceText[$noMentionMessage;$message[1];;1];$findUser[$message[1];no]]
 ✅ <@$findUser[$message[1];no]> was banned!
-$onlyIf[$findUser[$message[1];no]!=;❌ Failed to find user! Usage: `!ban (user) <reason>`]
 $elseif[$isNumber[$message[1]]==true]
 $banID[$replaceText[$message;$message[1];;1];$message[1]]
 ✅ $username[$message[1]]#$discriminator[$message[1]] was banned!
-$onlyIf[$userExists[$message[1]]==true;❌ Failed to find user! Usage: `!ban (user) <reason>`]
 $endif
 $endif
 
